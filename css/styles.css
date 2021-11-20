@@ -107,8 +107,10 @@ img {
 }
 
 .main-nav .link-adress {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -158,7 +160,7 @@ img {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -366,6 +368,7 @@ img {
 
 .team .list {
   display: flex;
+  justify-content: space-between;
 }
 
 .team .item + .item {
@@ -413,9 +416,8 @@ img {
   padding-bottom: 30px;
 }
 .social-link-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .social-link {
@@ -427,14 +429,13 @@ img {
   fill: #afb1b8;
 
   border-radius: 50%;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-social {
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .social-nets {
@@ -544,6 +545,7 @@ img {
 
 .footer-social {
   color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.17;
@@ -564,6 +566,19 @@ img {
 
 .footer-social-link {
   display: flex;
+}
+
+.footer-social-link .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-li + .social-li {
+  margin-left: 10px;
+}
+
+.footer-social-link .social-link:hover,
+.footer-social-link .social-link:focus {
+  background-color: var(--accent-color);
 }
 .footer-logo-nets {
   fill: var(--primary-white-color);
